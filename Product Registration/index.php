@@ -26,13 +26,13 @@
         <div class="col-50">
             <label for="warehouse">Bodega</label>
             <select id="warehouse" name="warehouse">
-                <option value="">Seleccione una bodega</option>
+                <option value=""></option>
             </select>
         </div>
         <div class="col-50">
             <label for="branch">Sucursal</label>
             <select id="branch" name="branch">
-                <option value="">Seleccione una sucursal</option>
+                <option value=""></option>
             </select>
         </div>
     </div>
@@ -41,7 +41,7 @@
         <div class="col-50">
             <label for="currency">Moneda:</label>
             <select id="currency" name="currency">
-                <option value="">Seleccione una moneda</option>
+                <option value=""></option>
             </select>
         </div>
         <div class="col-50">

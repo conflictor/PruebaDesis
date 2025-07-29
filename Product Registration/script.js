@@ -152,7 +152,7 @@ function loadCurrencies() {
  */
 function loadBranches(warehouseId) {
     const branchSelect = document.getElementById('branch');
-    branchSelect.innerHTML = '<option value="">Seleccione una sucursal</option>';
+    branchSelect.innerHTML = '<option value=""></option>';
 
     if (!warehouseId) return;
 
