@@ -1,4 +1,10 @@
 <?php
+/**
+ * Inserta un nuevo producto en la base de datos.
+ * Espera datos enviados por POST, y valida atributos obligatorios.
+ * Guarda el producto en la tabla `products` y sus materiales en `product_materials`.
+ * Devuelve un mensaje de éxito o error en formato JSON.
+ */
 header('Content-Type: application/json');
 
 require '../db/connection.php';

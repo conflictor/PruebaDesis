@@ -1,4 +1,8 @@
 <?php
+/**
+ * Devuelve las sucursales (branches) asociadas a una bodega específica.
+ * Requiere un parámetro GET `warehouse_id`.
+ */
 header('Content-Type: application/json');
 require '../db/connection.php';
 

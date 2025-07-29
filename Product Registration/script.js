@@ -1,3 +1,8 @@
+/**
+ * Guarda un nuevo producto en la base de datos a través de una solicitud AJAX.
+ * Toma los valores del formulario y los envía al backend para ser insertados.
+ * Muestra mensajes de éxito o error según la respuesta del servidor.
+ */
 function saveProduct() {
     const code = document.getElementById('product_code').value.trim();
     const name = document.getElementById('product_name').value.trim();
@@ -87,6 +92,10 @@ function saveProduct() {
         });
 }
 
+/**
+ * Carga la lista de bodegas (warehouses) desde el servidor mediante AJAX.
+ * Llena el elemento select correspondiente con las opciones recibidas.
+ */
 function loadWarehouses() {
     fetch('api/get_warehouses.php')
         .then(response => response.json())
@@ -109,6 +118,10 @@ function loadWarehouses() {
         });
 }
 
+/**
+ * Carga la lista de monedas (currencies) disponibles desde el servidor.
+ * Inserta las opciones en el campo select de monedas del formulario.
+ */
 function loadCurrencies() {
     fetch('api/get_currencies.php')
         .then(response => response.json())
@@ -131,6 +144,12 @@ function loadCurrencies() {
         });
 }
 
+/**
+ * Carga las sucursales (branches) asociadas a una bodega específica.
+ *
+ * @param {number} warehouseId - El ID de la bodega seleccionada.
+ * Llena el campo select de sucursales basado en la bodega elegida.
+ */
 function loadBranches(warehouseId) {
     const branchSelect = document.getElementById('branch');
     branchSelect.innerHTML = '<option value="">Seleccione una sucursal</option>';

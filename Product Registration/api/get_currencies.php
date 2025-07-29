@@ -1,4 +1,8 @@
 <?php
+/**
+ * Devuelve una lista de monedas (currencies) en formato JSON.
+ * Recupera todos los registros de la tabla `currencies` y los retorna como JSON.
+ */
 header('Content-Type: application/json');
 require '../db/connection.php';
 
